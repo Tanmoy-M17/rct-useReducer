@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FunctionProvider } from './Context/Function';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <FunctionProvider>
     <App />
+    </FunctionProvider>
   </React.StrictMode>
 );
 
